@@ -1,0 +1,38 @@
+<style>div#profile-picker a:hover,div.arrow:hover{opacity:.5}div#profile-picker{width:100%;white-space:nowrap;overflow-x:hidden;padding:15px 0;position:absolute;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}div#profile-picker a{text-decoration:none;color:#000}div.profile{display:inline-block;text-align:center}div.profile div.profile-image{width:100px;height:100px;display:inline-block;border-radius:50px;background-position:center center;background-size:cover}div.profile h1{margin:5px 0 -5px;font-size:1.5em}div.profile span{margin-top:0}div.arrow{position:absolute;cursor:pointer;margin-top:50px;font-size:2em;z-index:9999}div#right-arrow{right:0}div#left-arrow{float:left}</style>
+
+<div id="profile-picker">
+  <div id="left-arrow" class="arrow">&#60;</div>
+  <div id="right-arrow" class="arrow">&#62;</div>
+  <div id="profile-container"></div>
+</div>
+
+<script>
+  !function(){function e(e){return document.getElementById(e)}function t(){var t=e("profile-picker").offsetWidth;e("profile-container").innerHTML="",n=600>t?1:750>t?2:1e3>t?3:4,i.length<=n&&(n=i.length);for(var o=0;n>o;o++){var a=o+l;a>=i.length&&(a-=i.length);var r=i[a],c='style="background-image: url('+r.image+');"',h='style="width: '+100/n+'%;"',u='<a href="'+r.link+'">';u+='<div class="profile" '+h+">",u+='<div class="profile-image" '+c+"></div>",u+="<h1>"+r.title+"</h1>",u+="<span>"+r.subtitle+"</span>",u+="</div></a>",e("profile-container").innerHTML+=u}}
+  const i=[{
+    title: 'Bob Jones',
+    subtitle: 'Subtitle',
+    image: 'http://via.placeholder.com/350x350',
+    link: '#'
+  }, {
+    title: 'John Smith',
+    subtitle: 'Subtitle',
+    image: 'http://via.placeholder.com/350x350',
+    link: '#'
+  }, {
+    title: 'Jane Doe',
+    subtitle: 'Subtitle',
+    image: 'http://via.placeholder.com/350x350',
+    link: '#'
+  }, {
+    title: 'John Doe',
+    subtitle: 'Subtitle',
+    image: 'http://via.placeholder.com/350x350',
+    link: '#'
+  }, {
+    title: 'John Jones',
+    subtitle: 'Subtitle',
+    image: 'http://via.placeholder.com/350x350',
+    link: '#'
+  }];
+  var l=0,n=0;t(),window.onresize=function(){t()},document.getElementById("left-arrow").onclick=function(){l--,0>l&&(l=i.length),t()},document.getElementById("right-arrow").onclick=function(){l++,l>i.length&&(l=0),t()}}();
+</script>

@@ -1,0 +1,65 @@
+div#profile-picker {
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  padding: 15px 0px;
+  position: absolute;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+div#profile-picker a {
+  text-decoration: none;
+  color: #000;
+}
+
+div#profile-picker a:hover {
+  opacity: 0.5;
+}
+
+div.profile {
+  display: inline-block;
+  text-align: center;
+}
+
+div.profile div.profile-image {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border-radius: 50px;
+  background-position: center center;
+  background-size: cover;
+}
+
+div.profile h1 {
+  margin: 5px 0px -5px 0px;
+  font-size: 1.5em;
+}
+
+div.profile span {
+  margin-top: 0px;
+}
+
+div.arrow {
+  position: absolute;
+  cursor: pointer;
+  margin-top: 50px;
+  font-size: 2em;
+  z-index: 9999;
+}
+
+div.arrow:hover {
+  opacity: 0.5;
+}
+
+div#right-arrow {
+  right: 0px;
+}
+
+div#left-arrow {
+  float: left;
+}
