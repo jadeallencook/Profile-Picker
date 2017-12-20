@@ -1,7 +1,7 @@
 div#profile-picker {
   width: 100%;
   white-space: nowrap;
-  padding: 15px 0px;
+  padding: 50px 0px;
   position: relative;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -9,6 +9,10 @@ div#profile-picker {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+div#profile-picker h1#profile-header {
+  font-size: 1em;
 }
 
 div#profile-picker a {
