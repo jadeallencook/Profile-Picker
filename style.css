@@ -3,7 +3,6 @@ div#profile-picker {
   white-space: nowrap;
   overflow-x: hidden;
   padding: 15px 0px;
-  position: absolute;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
