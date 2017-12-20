@@ -13,6 +13,7 @@ div#profile-picker {
 
 div#profile-picker h1#profile-header {
   font-size: 1em;
+  text-align: center;
 }
 
 div#profile-picker a {
